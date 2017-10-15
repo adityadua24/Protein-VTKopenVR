@@ -1,0 +1,20 @@
+vtkNew<vtkActor> actor;
+vtkNew<vtkVolume> volume;
+vtkNew<vtkOpenVRRenderer> renderer;
+vtkNew<vtkOpenVRRenderWindow> renderWindow;
+vtkNew<vtkOpenVRRenderWindowInteractor> iren;
+vtkNew<vtkOpenVRInteractorStyle> style;
+vtkNew<vtkOpenVRCamera> cam;
+
+	renderWindow->AddRenderer(renderer.Get());
+	iren->SetRenderWindow(renderWindow.Get());
+	iren->SetInteractorStyle(style.Get());
+	renderer->SetActiveCamera(cam.Get());
+
+	// Without the next line volume rendering in VR does not work
+	renderWindow->SetMultiSamples(0);
+
+	// Render
+	renderer->ResetCamera();
+	renderWindow->Render();
+	iren->Start();

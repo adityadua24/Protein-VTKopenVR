@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{97C4769E-80B8-4AB5-8C8C-8F935C04BE2C}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>D:\downloads\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;D:\downloads\openvr-master\openvr-master\headers;C:\Program Files %28x86%29\VTKcplusplus\VTK\include\vtk-8.1;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\downloads\openvr-master\openvr-master\lib\win32;D:\downloads\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;C:\Program Files %28x86%29\VTKcplusplus\VTK\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>D:\downloads\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;D:\downloads\openvr-master\openvr-master\headers;C:\Program Files %28x86%29\VTKcplusplus\VTK\include\vtk-8.1;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\downloads\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;D:\downloads\openvr-master\openvr-master\lib\win32;C:\Program Files %28x86%29\VTKcplusplus\VTK\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkalglib-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkChartsCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonColor-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonComputationalGeometry-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonDataModel-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonExecutionModel-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonMath-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonMisc-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonSystem-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonTransforms-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkDICOMParser-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkDomainsChemistry-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkDomainsChemistryOpenGL2-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkexoIIc-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkexpat-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersAMR-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersExtraction-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersFlowPaths-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersGeneral-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersGeneric-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersGeometry-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersHybrid-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersHyperTree-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersImaging-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersModeling-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersParallel-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersParallelImaging-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersPoints-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersProgrammable-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersSelection-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersSMP-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersSources-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersStatistics-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersTexture-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersTopology-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersVerdict-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkfreetype-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkGeovisCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkgl2ps-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkglew-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkhdf5_hl-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkhdf5-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingColor-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingFourier-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingGeneral-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingHybrid-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingMath-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingMorphological-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingSources-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingStatistics-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingStencil-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkInfovisCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkInfovisLayout-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkInteractionImage-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkInteractionStyle-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkInteractionWidgets-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOAMR-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOEnSight-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOExodus-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOExport-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOExportOpenGL2-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOGeometry-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOImage-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOImport-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOInfovis-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOLegacy-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOLSDyna-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOMINC-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOMovie-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIONetCDF-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOParallel-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOParallelXML-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOPLY-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOSQL-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOTecplotTable-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOVideo-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOXML-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOXMLParser-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkjpeg-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkjsoncpp-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtklibharu-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtklibxml2-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtklz4-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkmetaio-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkNetCDF-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtknetcdfcpp-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkoggtheora-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkParallelCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkpng-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkproj4-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingAnnotation-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingContext2D-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingContextOpenGL2-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingFreeType-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingGL2PSOpenGL2-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingImage-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingLabel-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingLOD-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingOpenVR-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingVolume-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingVolumeOpenGL2-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingOpenGL2-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtksys-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtksqlite-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkTestingGenericBridge-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkTestingIOSQL-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkTestingRendering-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtktiff-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkverdict-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkViewsContext2D-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkViewsCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkViewsInfovis-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkzlib-8.1.lib;D:\downloads\openvr-master\openvr-master\lib\win32\openvr_api.lib;D:\downloads\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86\SDL2.lib;D:\downloads\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86\SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkalglib-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkChartsCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonColor-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonComputationalGeometry-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonDataModel-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonExecutionModel-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonMath-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonMisc-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonSystem-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkCommonTransforms-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkDICOMParser-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkDomainsChemistry-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkDomainsChemistryOpenGL2-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkexoIIc-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkexpat-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersAMR-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersExtraction-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersFlowPaths-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersGeneral-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersGeneric-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersGeometry-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersHybrid-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersHyperTree-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersImaging-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersModeling-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersParallel-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersParallelImaging-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersPoints-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersProgrammable-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersSelection-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersSMP-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersSources-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersStatistics-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersTexture-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersTopology-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkFiltersVerdict-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkfreetype-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkGeovisCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkgl2ps-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkglew-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkhdf5_hl-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkhdf5-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingColor-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingFourier-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingGeneral-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingHybrid-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingMath-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingMorphological-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingSources-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingStatistics-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkImagingStencil-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkInfovisCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkInfovisLayout-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkInteractionImage-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkInteractionStyle-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkInteractionWidgets-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOAMR-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOEnSight-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOExodus-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOExport-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOExportOpenGL2-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOGeometry-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOImage-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOImport-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOInfovis-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOLegacy-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOLSDyna-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOMINC-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOMovie-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIONetCDF-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOParallel-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOParallelXML-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOPLY-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOSQL-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOTecplotTable-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOVideo-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOXML-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkIOXMLParser-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkjpeg-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkjsoncpp-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtklibharu-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtklibxml2-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtklz4-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkmetaio-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkNetCDF-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtknetcdfcpp-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkoggtheora-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkParallelCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkpng-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkproj4-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingAnnotation-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingContext2D-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingContextOpenGL2-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingFreeType-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingGL2PSOpenGL2-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingImage-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingLabel-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingLOD-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingOpenVR-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingVolume-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingVolumeOpenGL2-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkRenderingOpenGL2-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtksys-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtksqlite-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkTestingGenericBridge-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkTestingIOSQL-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkTestingRendering-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtktiff-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkverdict-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkViewsContext2D-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkViewsCore-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkViewsInfovis-8.1.lib;C:\Program Files (x86)\VTKcplusplus\VTK\lib\vtkzlib-8.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Text.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
