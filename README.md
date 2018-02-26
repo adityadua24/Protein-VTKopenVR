@@ -16,14 +16,9 @@ VTK compiled with vtkRenderingOpenVR module
 
 Click on the first screenshot to see visulization video on YouTube.
 
-[![Visualization screenshot](./imgs/1.PNG)](https://youtu.be/dPkU7Uk7Lpo)
+[![Visualization screenshot](./imgs/1.png)](https://youtu.be/dPkU7Uk7Lpo)
 
-![Visualization screenshot](./imgs/2.PNG)
+![Visualization screenshot](./imgs/2.png)
 
-![Visualization screenshot](./imgs/3.PNG)
+![Visualization screenshot](./imgs/3.png)
 
-![Visualization screenshot](./imgs/4.PNG)
-
-![Visualization screenshot](./imgs/5.PNG)
-
-![Visualization screenshot](./imgs/6.PNG)
